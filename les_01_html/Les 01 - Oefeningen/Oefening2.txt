@@ -1,0 +1,16 @@
+1. Surf via Chrome of FireFox naar https://www.sportfocus.be
+2. Bekijk de broncode.
+3. Welke doctype wordt hier gebruikt?
+    Html
+4. Welke title wordt hier gebruikt?
+    SportFocus vzw - Zwemlessen - Sportkampen - Voetbal
+5. Welke charset wordt hier gebruikt?
+    UTF-8
+6. Valideer de webpagina. Is deze pagina valide?
+    Nee, er zijn 19 errors aanwezig.
+7. In de code staat iets ivm met favicon <link rel="icon" href="***.png" />
+Zoek op het internet wat dit stukje code betekent.
+    Het waarde bij link rel="icon" importeert een icoontje voor de website. Dit kan zowel een favicon.ico of een afbeelding zijn. In dit geval is deze afbeelding een PNG, href="***.png" zoekt naar de bron PNG afbeelding in de folder.
+    
+Waar zie je het effect van deze lijn code in Chrome?
+    Je ziet linksboven in de tabladen het gegeven afbeelding/icoontje van de website. Als dit niet gegeven is het icoontje meestal een stock icoontje.
