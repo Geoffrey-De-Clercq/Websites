@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Major+Mono+Display&family=Sedgwick+Ave+Display&display=swap');
+
+body {
+    font-family: arial, sans-serif;
+}
+
+.section {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid #000000;
+    border-radius: 10px;
+}
+
+#section1 {
+    background-color: #e6a2a2;
+    color: #600;
+    font-family: 'Croissant One'
+
+}
+
+#section2 {
+    background-color: #a2c4e6;
+    color: #004080;
+    font-family: 'Major Mono Display';
+
+}
+
+#section3 {
+    background-color: #a2e6c4;
+    color: #00663d;
+    font-family: 'Sedgwick Ave Display';
+
+}
+
+
+
