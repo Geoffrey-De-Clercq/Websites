@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les 05 - Oef 01</title>
+
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 10px;
+        font-size: 25px;
+      }
+
+      form {
+        width: 40%;
+      }
+
+    input[type=text], input[typer=submit] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    input[type=text] {
+        background-color: lightblue;
+    }
+
+    input[type=text]:focus {
+        background-color: white;
+        border: 3px solid #555;
+    }
+
+    input[type=submit] {
+        font-size: 25px;
+    }
+    
+
+    </style>
+  </head>
+
+  <body>
+    <form method="post" action="https://tm-statweb.be/forms.php">
+      <div>
+        <label for="voornaam">Voornaam:</label><br>
+        <input type="text" name="voornaam" id="voornaam" placeholder="Voornaam" /><br>
+
+        <label for="familienaam">Familienaam:</label><br>
+        <input type="text" name="familienaam" id="familienaam" placeholder="Familienaam"><br>
+        <input type="submit" value="Registreren">
+      </div>
+    </form>
+  </body>
+</html>

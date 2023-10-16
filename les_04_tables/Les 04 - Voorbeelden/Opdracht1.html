@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 1</title>
+<style>
+table {
+    margin: 20px 0;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: #c03d1e;
+}
+
+table.border {
+    margin: 1em;
+    /* 1em means "equal to the current font size" */
+    border: solid 1px gray;
+    border-collapse: collapse;
+    /* separate; */
+}
+
+table.border td {
+    border: solid 2px rgb(195, 25, 25);
+    padding: 5px;
+}
+
+table.border th {
+    border: solid 2px rgb(195, 25, 25);
+    padding: 5px;
+    background-color: #f3a895;
+
+}
+
+table.strips {
+    margin: 1em;
+    /* 1em means "equal to the current font size" */
+    border: solid 1px #00283c;
+    border-collapse: collapse;
+    /* separate; */
+    border-spacing: 0;
+}
+
+table.strips td {
+    border: solid 1px #00283c;
+    padding: 10px;
+    color: #c03d1e;
+}
+
+table.strips th {
+    border: solid 1px #00283c;
+    padding: 5px;
+    background-color: #00283c;
+    color: white;
+}
+
+
+/* Voorbeeld border-spacing */
+
+table.border-spacing {
+    margin: 1em;
+    /* 1em means "equal to the current font size" */
+    border: solid 1px gray;
+    border-collapse: separate;
+    border-spacing: 5px 1rem;
+    /* 5px horizontal spacing, 1rem vertical spacing */
+}
+
+table.border-spacing td {
+    border: solid 1px gray;
+    padding: 5px;
+}
+
+table.border-spacing th {
+    border: solid 1px gray;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+
+/* Voorbeeld cell-padding */
+
+table.cell-padding {
+    margin: 1em;
+    /* 1em means "equal to the current font size" */
+    border: solid 1px gray;
+    border-collapse: collapse;
+}
+
+table.cell-padding td {
+    border: solid 1px gray;
+    padding: 15px 35px;
+    text-align: center;
+}
+
+table.cell-padding th {
+    border: solid 1px gray;
+    padding: 5px;
+    background-color: lightgray;
+}
+</style>
+</head>
+
+<body>
+
+    <h1>Opdracht 1</h1>
+    <table class="border">
+        <tr>
+            <th>cel 1</th>
+            <th colspan="2">samengevoegd</th>
+            <!--<td>cel 3</td>-->
+        </tr>
+        <tr>
+            <th rowspan="2">samengevoegd</th>
+            <td>cel 5</td>
+            <td>cel 6</td>
+        </tr>
+        <tr>
+            <!-- <td>cel 7</td> -->
+            <td>cel 8</td>
+            <td>cel 9</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
