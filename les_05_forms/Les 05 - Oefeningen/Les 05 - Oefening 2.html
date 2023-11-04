@@ -9,51 +9,91 @@
       body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      input[type="submit"] {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 15px;
+        box-shadow: 5px 5px lightgray;
+        font-size: 20px;
+      }
+      input[type="text"]:focus,
+      input[type="password"]:focus,
+      input[type="email"]:focus {
+        border: 3px solid #555;
+      }
     </style>
   </head>
 
   <body>
     <form method="post" action="https://tm-statweb.be/forms.php">
       <div>
-        <label for="voornaam">Voornaam:</label><br />
+        <label for="voornaam">Voornaam:</label>
+      </div>
+
+      <div>
         <input
           type="text"
           name="voornaam"
           id="voornaam"
           placeholder="Voornaam"
-        /><br />
+        />
+      </div>
 
-        <label for="familienaam">Familienaam:</label><br />
+      <div>
+        <label for="familienaam">Familienaam:</label>
+      </div>
+      <div>
         <input
           type="text"
           name="familienaam"
           id="familienaam"
           placeholder="Familienaam"
-        /><br />
+        />
+      </div>
 
-        <label for="gebruikersnaam">Gebruikersnaam:</label><br />
+      <div><label for="gebruikersnaam">Gebruikersnaam:</label></div>
+      <div>
         <input
-          type="text"
+          type="email"
           name="gebruikersnaam"
           id="familienaam"
           placeholder="mail@thomasmore.be"
-        /><br />
+        />
+      </div>
 
-        <label for="bijnaam">Nickname:</label><br />
-        <input type="text" name="bijnaam" id="familienaam" /><br />
+      <div><label for="bijnaam">Nickname:</label></div>
+      <div>
+        <input
+          type="text"
+          name="bijnaam"
+          id="familienaam"
+          minlength="5"
+          maxlength="15"
+          required
+        />
+      </div>
 
-        <label for="paswoord">Paswoord:</label><br />
-        <input type="password" name="paswoord" id="paswoord" /><br />
+      <div><label for="paswoord">Paswoord:</label></div>
+      <div>
+        <input type="password" name="paswoord" id="paswoord" required />
+      </div>
 
-        <label for="herhalingpaswoord">Herhaal paswoord:</label><br />
+      <div><label for="herhalingpaswoord">Herhaal paswoord:</label></div>
+      <div>
         <input
           type="password"
           name="herhalingpaswoord"
           id="herhalingpaswoord"
-        /><br />
-
-        <input type="submit" value="Registreren" />
+          required
+        />
       </div>
+
+      <div><input type="submit" value="Registreren" /></div>
     </form>
   </body>
 </html>

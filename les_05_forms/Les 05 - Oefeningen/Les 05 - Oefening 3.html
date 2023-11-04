@@ -6,11 +6,72 @@
     <title>Les 05 - Oef 03</title>
 
     <style>
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+fieldset,
+input[type='submit'] {
+    width: 25%;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+input[value='Registreren'] {
+    font-weight: 700;
+}
+
+fieldset label {
+    text-align: left;
+    font-size: 12px;
+}
+
+legend {
+    background-color: maroon;
+    color: white;
+    padding: 3px 6px;
+}
     </style>
 
 </head>
+<form method="action" post="https://tm-statweb.be/forms.php">
+<fieldset>
+    <legend>Geslacht</legend>
+    <label for="man">Man
+        <input type="radio" id="man" name="geslacht" value="man">
+    </label>
+    <label for="vrouw">Vrouw
+        <input type="radio" id="vrouw" name="geslacht" value="vrouw">
+    </label>
+    <label for="ander">Ander
+        <input type="radio" id="ander" name="geslacht" value="ander">
+    </label>
+</fieldset>
 
+<fieldset>
+    <legend>Kleur ogen</legend>
+    <label for="bruin">Bruin
+        <input type="radio" id="bruin" name="kleuroog" value="bruin">
+    </label>
+    <label for="groen">Groen
+        <input type="radio" id="groen" name="kleuroog" value="groen">
+    </label>
+    <label for="blauw">Blauw
+        <input type="radio" id="blauw" name="kleuroog" value="blauw">
+    </label>
+    <label for="grijs">Grijs
+        <input type="radio" id="grijs" name="kleuroog" value="grijs">
+    </label>
+</fieldset>
+
+<div>
+    <input type="submit" value="Registreren">
+</div>
+
+</form>
 <body>
     
 

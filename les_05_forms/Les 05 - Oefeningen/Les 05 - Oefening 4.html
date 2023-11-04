@@ -1,19 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Les 05 - Oef 04</title>
 
     <style>
+      body {
+        margin: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+      }
 
+      ::placeholder {
+        color: lightgray;
+        opacity: 1;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      input[type="submit"],
+      select {
+        width: 20%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        box-shadow: 5px 5px lightgray;
+        font-size: 20px;
+        background-color: #fa6432;
+        color: white;
+      }
+
+      input[type="text"]:focus,
+      input[type="password"]:focus,
+      input[type="email"]:focus {
+        border: 3px solid #555;
+        background-color: #fa6432;
+      }
     </style>
+  </head>
 
-</head>
+  <body>
+    <form action="https://tm-statweb.be/forms.php" method="POST">
+      <div>
+        <label for="voornaam">Voornaam: </label>
+      </div>
+      <div>
+        <input
+          type="text"
+          id="voornaam"
+          name="voornaam"
+          placeholder="Voornaam"
+        />
+      </div>
+      <div>
+        <label for="familienaam">Familienaam: </label>
+      </div>
+      <div>
+        <input
+          type="text"
+          id="familienaam"
+          name="familienaam"
+          placeholder="Familienaam"
+        />
+      </div>
+      <div>
+        <label for="auto">Kies een auto: </label>
+      </div>
+      <div>
+        <select name="auto" id="auto">
+          <option></option>
+          <option value="ford">Ford</option>
+          <option value="peugeot">Peugeot</option>
+          <option value="volvo">Volvo</option>
+          <option value="skoda">Skoda</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
 
-<body>
-    
-
-    
-</body>
+      <div>
+        <input type="submit" value="Registreren" />
+      </div>
+    </form>
+  </body>
 </html>
