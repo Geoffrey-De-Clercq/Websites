@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opsommingslijsten.html</title>
+    <style>
+      /* Opmaak voor de klasse music-genres */
+      .music-genres {
+        list-style-type: decimal;
+        padding: 0;
+        width: 25%;
+      }
+      .music-genres li {
+        background-color: #00283c;
+        color: white;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+      }
+      .music-genres li:hover {
+        background-color: #fa6432;
+      }
+      /* Opmaak voor de klasse animal-list */
+      .animal-list {
+        list-style-type: none;
+        padding: 0;
+        width: 25%;
+      }
+      .animal-list li {
+        background-color: #00283c;
+        color: white;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+      }
+      .animal-list li:hover {
+        background-color: #fa6432;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>unordered list (niet-genummerde lijst)</h2>
+    <ul>
+      <li>Hond</li>
+      <!-- list-item -->
+      <li>Kat</li>
+      <li>Vogel</li>
+      <li>Konijn</li>
+    </ul>
+    <h2>unordered list met opmaak via css</h2>
+    <ul class="animal-list">
+      <li>Hond</li>
+      <li>Kat</li>
+      <li>Vogel</li>
+      <li>Konijn</li>
+    </ul>
+
+    <h2>ordered list met opmaak via CSS</h2>
+    <ol class="music-genres">
+      <li>Pop</li>
+      <li>R&amp;B</li>
+      <li>Jazz</li>
+      <li>Rock</li>
+    </ol>
+
+    <h2>Definitielijsten</h2>
+    <dl>
+      <!-- definitielijst -->
+      <dt>Genummerde lijst</dt>
+      <!-- definitie term -->
+      <dd>Opsomming voorafgegaan door nummers.</dd>
+      <!-- beschrijft de term -->
+      <dt>Niet-genummerde lijst</dt>
+      <dd>Opsomming voorafgegaan door symbolen.</dd>
+      <dt>Definitielijst</dt>
+      <dd>Verklarende woordenlijst</dd>
+    </dl>
+
+    <h2>Nesten van lijsten</h2>
+    <ul>
+      <li>Koffie</li>
+      <li>
+        Thee
+        <!-- Om een nieuwe lijst te starten binnen een item,
+            sluiten we de li-tag nog niet af met </li> -->
+        <ol>
+          <li>Groene thee</li>
+          <li>Zwarte thee</li>
+          <li>Appelblauwzeegroen thee</li>
+        </ol>
+        <!-- Hier komt pas de sluittag </li>, na het einde van de nieuwe lijst. -->
+      </li>
+      <li>Melk</li>
+    </ul>
+  </body>
+</html>
